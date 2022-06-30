@@ -1,0 +1,19 @@
+<html>
+<head>
+    <script>
+        var integer = 5;
+        var notinteger = "5";
+        is_integer(integer);
+        is_integer(notinteger);
+
+        function is_integer(int){
+            if(typeof(int) == "number"){
+                alert(int + " is an integer.");
+            }else{
+                alert(int + ' is not an integer');
+            }
+        }
+    </script>
+</head>    
+<body></body>
+</html>

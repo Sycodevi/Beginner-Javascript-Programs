@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            var computer_as_string = //Next line is continuation of this var, we defined it in JSON Format.
+            /*{
+	        "Motherboard": "ASUS P8B75-M",
+	        "CPU": "i5 2400",
+	        "GPU": "SAPPHIRE RX 570",
+	        "Memory": "16 Gigabytes",                             //Actual JSON Format.
+	        "Storage": "500GB HDD & 256GB SSD",
+	        "Number": 23100
+            }*/ 
+            //Js readable JSON Format:
+            "{\"Motherboard\": \"ASUS P8B75-M\",\"CPU\": \"i5 2400\",\"GPU\": \"SAPPHIRE RX 570\",\"Memory\": \"16 Gigabytes\",\"Storage\": \"500GB HDD & 256GB SSD\",\"Number\": 23100}";
+            alert(computer_as_string); //Computer cannot read JSON format properly.
+            var computer = JSON.parse(computer_as_string); //We convert the JSON format into Javacript readable format.
+            alert(computer); //Check if its reading as object.
+            alert(computer.Motherboard +"\n"+ computer.CPU +"\n"+ computer.GPU +"\n"+ computer.Memory); //Here we can now dispaly individual values.
+
+        </script>
+    </head>
+    <body></body>
+</html>

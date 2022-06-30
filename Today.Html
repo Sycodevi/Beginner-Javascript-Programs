@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src = "./Helloworld.js"></script>
+        <script>
+            var Day = new Date(); //Get todays date
+            var Today = Day.getDay(); //Get Day, 1 = Monday, 2 = Tuesday, 3 = Wednesday etc.
+            alert(Number_To_Day(Today)); //Send the number in "Today" to function.
+            alert(Hello("Hey"));
+            function Number_To_Day(Number){ //Received the number from "Today" to "Number"
+           
+            switch(Number){ //Check the cases
+                case 1: return "Monday";
+                break;
+                case 2: return "Tuesday";
+                break;
+                case 3: return "Wednesday";
+                break;
+                case 4: return "Thursday";
+                break;
+                case 5: return "Friday";
+                break;
+                case 6: return "Saturday";
+                break;
+                case 7: return "Sunday";
+                break;
+                default: return "Invalid date!";
+                }
+            }
+
+        </script>
+    </head>
+<body></body>
+</html>

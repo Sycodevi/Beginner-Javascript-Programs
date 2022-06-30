@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            var date = new Date(); //gets current date i.e 25/06/2022
+            let year = date.getFullYear(); //gets the value of year out of date i.e 2022
+            var pagemessage = "Is current year of " + year + " a leap year?"; 
+            
+            check_leap_year(year); //Check function below
+            alert(pagemessage + "\n" + check_leap_year(year) + " " + year + " is not a leap year"); //Browser alert message
+           
+            function check_leap_year(year){
+                if(year % 400 == 0){ //Divide year by 400 and check if remainder is 0
+                    return true; //check_leap_year = True
+                }
+                else if((year % 4 == 0) && (year % 100 != 0)){ //Div by 4 and 100 and check
+                    return true; //True
+                }
+                else{
+                    return false;//If there is remainder the year is a leap year.
+                }
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
